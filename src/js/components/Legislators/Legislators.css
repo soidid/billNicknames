@@ -1,0 +1,78 @@
+.Legislators {
+	display: flex;
+	flex-direction: column;
+}
+@media screen and (min-width: 500px){
+	.Legislators {
+		flex-direction: row;
+    }
+}
+.Legislators-group {
+	flex: 1;
+	margin: 10px;
+	padding: 10px 0px;
+	background: rgb(220,220,220);
+}
+.Legislators-groupTitle {
+	font-size: 20px;
+	font-weight: 800;
+}
+.Legislators-avatar.is-KMT {
+  border: 1px solid #3288bd;
+  border-bottom:4px solid #3288bd;
+}
+.Legislators-avatar.is-DPP {
+  border: 1px solid #7fbc41;
+  border-bottom:4px solid #7fbc41;
+}
+.Legislators-avatar.is-PFP {
+  border: 1px solid orange;
+  border-bottom:4px solid orange;
+}
+.Legislators-avatar.is-TSU {
+  border: 1px solid #b35806;
+  border-bottom:4px solid #b35806;
+}
+.Legislators-avatar.is-NP {
+  border: 1px solid gray;
+  border-bottom:4px solid gray;
+}
+.Legislators-avatar.is-NPU {
+  border: 1px solid rgba(194,15,81,0.9);
+  border-bottom:4px solid rgba(194,15,81,0.9);
+}
+
+.Legislators-avatarImg {
+	width: 40px;
+	height: 40px;
+}
+.Legislators-item {
+	display: inline-block;
+}
+.Legislators-avatar {
+	display: inline-block;
+	background: white;
+	margin: 4px;
+	font-size: 12px;
+	position: relative;
+}
+.Legislators-avatar:hover {
+	box-shadow: 0px -2px 0 4px rgba(0,0,0,0.12)
+	
+}
+.Legislators-hoverInfo {
+	display: none;
+}
+.Legislators-item:hover .Legislators-hoverInfo {
+	background: white;
+	box-shadow: 2px 2px 0 0 rgba(0,0,0,0.12);
+	padding: 2px 10px;
+	text-align: left;
+	position: absolute;
+	display: block;
+	z-index: 100;
+	font-size: 12px;
+	max-width: 300px;
+
+
+}
